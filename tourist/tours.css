@@ -1,0 +1,224 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tourism-container {
+            width: 80%;
+            max-width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .view-tours {
+            font-size: 1rem;
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .view-tours span {
+            font-size: 1.2rem;
+        }
+
+        .tour-slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .tour-cards {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .tour-card {
+            min-width: 45%; /* Reduced to allow space between cards */
+            margin-right: 5%; /* Adds space between two visible cards */
+            text-align: left;
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover; /* Ensures all images are cropped uniformly */
+            border-radius: 10px;
+        }
+
+        .card-info {
+            padding: 10px;
+        }
+
+        .card-info p {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .card-info h3 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        .navigation-arrows {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .navigation-arrows button {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .navigation-arrows button:hover {
+            background-color: #f0f0f0;
+        }
+
+
+
+
+        /* ===================== footer css============== */
+
+        *======================================= footer css ====================================== */
+
+footer {
+  background-color: #37474F;
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 8px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #90e5eb;
+}
+
+.footer-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #008cff;
+}
+
+.query-btn {
+  background-color: #90e5eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.query-btn a{
+  color: rgb(75, 72, 72);
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.query-btn:hover {
+  background-color:#f8a8a8;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design footer  */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 30px;
+  }
+}
+
+

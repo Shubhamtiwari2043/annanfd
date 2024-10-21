@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tourism Slider</title>
+    <link rel="stylesheet" href="tours.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tourism-container">
+            <h1>Top India Tourism Experiences</h1>
+            <a href="#" class="view-tours">View All Tours <span>&#8250;</span></a>
+            
+            <div class="tour-slider">
+                <div class="tour-cards">
+                    <div class="tour-card">
+                        <img src="/map-img/africa.jpeg" alt="Wildlife Tourism">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Wildlife Tourism in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="/map-img/am.jpg" alt="Hill Stations">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Hill Stations in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="/map-img/aus.jpg" alt="Desert Tourism">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Desert Tourism in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="map-img/bangladesh.jpeg" alt="Beach Tourism">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Beach Tourism in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="map-img/bhutan.jpg" alt="Wildlife Tourism">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Wildlife Tourism in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="map-img/brazil.jpg" alt="Hill Stations">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Hill Stations in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="map-img/vietnam.jpg" alt="Desert Tourism">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Desert Tourism in India</h3>
+                        </div>
+                    </div>
+    
+                    <div class="tour-card">
+                        <img src="map-img/thailand.jpg" alt="Beach Tourism">
+                        <div class="card-info">
+                            <p>Travel Guide</p>
+                            <h3>Beach Tourism in India</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="navigation-arrows">
+                <button class="prev">&#8592;</button>
+                <button class="next">&#8594;</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <Section>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="/img/hopco1.png" alt="HOPCO Travel Logo" class="logo">
+                </div>
+                
+                <p>
+                  "Tourism unites us, giving us the chance to experience the beauty and diversity of our world firsthand."
+                </p>
+              </div>
+              
+              <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <!-- <li><a href="#">Disclaimer</a></li> -->
+                  <li><a href="/blog/TeeTime.php">Blogs</a></li>
+                  <li><a href="/Contact/Contactform.php">Contact us</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fa fa-map-marker"></i> 202, Madhuban, 23, Cochin Street, 323, Shahid Bhagat Singh Road, Fort, Mumbai 400001.</p>
+                <p><i class="fa fa-phone-alt me-3"></i> +91-22-22642244/0022</p>
+                <p><i class="fa fa-envelope"></i> info@hopcotravels.com</p> <br>
+                <button class="query-btn"><a href="/Contact/Contactform.php">Send Query</a></button>
+              </div>
+              
+              <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=100071094579446"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/thehopco"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hopcotravels/"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
+              </div>
+            </div>
+            <p class="footer-bottom">Copyright © HOPCO Travels 2024</p>
+        </footer>
+          
+    </Section>
+    
+
+    <script>
+        let currentIndex = 0;
+        const cards = document.querySelectorAll('.tour-card');
+        const totalCards = cards.length;
+        const tourCardsWrapper = document.querySelector('.tour-cards');
+
+        document.querySelector('.next').addEventListener('click', () => {
+            if (currentIndex < totalCards - 2) {
+                currentIndex++;
+                updateSlider();
+            }
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        });
+
+        function updateSlider() {
+            const translateXValue = currentIndex * -(50 + 5); // 50% of the card width + 5% margin between cards
+            tourCardsWrapper.style.transform = `translateX(${translateXValue}%)`;
+        }
+    </script>
+</body>
+</html>
